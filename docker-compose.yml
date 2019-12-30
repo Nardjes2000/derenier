@@ -2,20 +2,16 @@ version: '3'
 
 services:
   app1:
-    container_name: igl_app1
+    container_name: igl_app7
     build: ./laravel5
     volumes:
       - ./laravel5/app
     ports:
-      - 5000:80
-
+      - 8002:80
   app2:
-    container_name: igl_app2
+    container_name: igl_app8
     build: ./my-project
     volumes:
       - ./my-project/app
     ports:
-      - 5001:80
-
-  redis:
-    image: "redis:alpine"
+      - 8003:80
